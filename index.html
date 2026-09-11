@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>César Oliva</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/17383348a8.js" crossorigin="anonymous"></script>
+</head>
+<body class="cork-board h-screen max-h-screen overflow-hidden flex items-center justify-center p-3 sm:p-5 md:p-6 font-sans">
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 
+        bg-[#b8d4e3] flex flex-col items-center justify-center text-center 
+        shadow-2xl border border-[#d6be9c]/50 z-[50] px-24 py-6"
+    >
+        <div class="pin pin-red"></div>
+        <div class="pt-4 pb-2">
+            <h1 class="text-xl font-bold text-stone-800 tracking-tight">César Oliva</h1>
+            <p class="text-sm font-medium text-stone-600 mt-1 uppercase tracking-widest">Sobre mí</p>
+        </div>
+    </div>
+    
+    <div class="about-grid grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 max-w-5xl w-full h-full max-h-[44rem] my-auto items-stretch">
+        <div class="sticky-note relative bg-[#f8b4b8] aspect-square p-6 flex flex-col justify-between -rotate-1 px-4">
+            <div class="pin pin-white"></div>
+            <div class="pt-6 h-full flex flex-col justify-center items-center text-center">
+                <h2 class="text-lg font-bold text-stone-800 tracking-tight leading-tight mb-2">Datos personales:</h2>
+                <p class="text-pink-950/70 text-sm font-semibold tracking-wider uppercase select-none"><span class="text-black">🎊</span> 20 años</p>
+                <p class="text-pink-950/70 text-sm font-semibold tracking-wider uppercase select-none"><span class="text-black">📆</span> 24 de Febrero</p>
+                <p class="text-pink-950/70 text-sm font-semibold tracking-wider uppercase select-none"><span class="text-black">♓</span> Piscis</p>
+                <p class="text-pink-950/70 text-sm font-semibold tracking-wider uppercase select-none"><span class="text-black">📍</span> Monterrey</p>
+            </div>
+        </div>
+
+        <div class="sticky-note relative bg-[#f5f3ef] aspect-square p-6 flex flex-col justify-between rotate-1 px-4">
+            <div class="pin pin-red"></div>
+            <div class="pt-6 h-full flex flex-col justify-center items-center text-center">
+                <!-- <h2 class="text-lg font-bold text-stone-800 tracking-tight leading-tight mb-2">Mi album favorito oat:</h2>
+                <img src="Images/deseo.png" alt="Deseo, Carne y Voluntad" class="w-32 h-32 object-cover mb-2">
+                <p class="text-stone-800/70 text-xs font-semibold tracking-wider uppercase select-none">Deseo, Carne y Voluntad</p> -->
+            </div>
+        </div>
+
+        <div class="sticky-note relative bg-[#fef2b8] aspect-square p-6 flex flex-col justify-between rotate-2 px-4">
+            <div class="pin pin-blue"></div>
+            <div class="pt-6 h-full flex flex-col justify-center items-center text-center">
+                <h2 class="text-lg font-bold text-stone-800 tracking-tight leading-tight mb-2">Mi obsesión musical de la semana:</h2>
+                <img src="Images/suave.png" alt="Suave - Akriila, Jane Remover" class="w-32 h-32 object-cover mb-1">
+                <p class="text-yellow-950/70 text-xs font-semibold tracking-wider uppercase select-none">Suave - Akriila, Jane Remover</p>
+                <div class="music-player mt-1 w-full" data-player>
+                    <audio src="Images/suave.mp3" preload="metadata"></audio>
+                    <div class="flex items-center justify-center gap-2">
+                        <button type="button" class="player-button" data-play aria-label="Reproducir canción">▶︎</button> •၊၊||၊|။||||။၊|။•
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sticky-note relative bg-[#d6be9c] aspect-square p-6 flex flex-col justify-between rotate-1 px-4">
+            <div class="pin pin-green"></div>
+            <div class="pt-6 h-full flex flex-col justify-center items-center text-center">
+                <h2 class="text-lg font-bold text-stone-800 tracking-tight leading-tight mb-2">Fun facts:</h2>
+                <ul class="fun-facts-list">
+                    <li class="text-amber-950/70 text-sm font-semibold tracking-wider uppercase">Fan de los Marlboro de clavo y la cerveza XX</li>
+                    <li class="text-amber-950/70 text-sm font-semibold tracking-wider uppercase">Hater #1 del mango</li>
+                    <li class="text-amber-950/70 text-sm font-semibold tracking-wider uppercase">Me encanta escribir con hashtags</li>
+                    <li class="text-amber-950/70 text-sm font-semibold tracking-wider uppercase">Mi comida favorita es la lasaña</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sticky-note relative bg-[#c8c4db] aspect-square p-6 flex flex-col justify-between rotate-1 px-4">
+            <div class="pin pin-white"></div>
+            <div class="pt-6 h-full flex flex-col justify-center items-center text-center">
+                <h2 class="text-lg font-bold text-stone-800 tracking-tight leading-tight mb-2">Lista de enemigos:</h2>
+                <ul class="fun-facts-list">
+                    <li class="text-purple-950/70 text-sm font-semibold tracking-wider uppercase">Hipo</li>
+                    <li class="text-purple-950/70 text-sm font-semibold tracking-wider uppercase">Pantalones de mezclilla</li>
+                    <li class="text-purple-950/70 text-sm font-semibold tracking-wider uppercase">Evangelina</li>
+                    <li class="text-purple-950/70 text-sm font-semibold tracking-wider uppercase">Smirnoff de tamarindo</li>
+                    <li class="text-purple-950/70 text-sm font-semibold tracking-wider uppercase">Escaleras frente al edificio 19</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sticky-note relative bg-[#b1d3c5] aspect-square p-6 flex flex-col justify-between -rotate-2">
+            <div class="pin pin-yellow"></div>
+            <div class="pt-6 h-full flex flex-col justify-center items-center text-center">
+                <h2 class="text-lg font-bold text-stone-800 tracking-tight leading-tight mb-2">Redes sociales:</h2>
+                <div class="flex space-x-4 text-stone-800/70 text-3xl">
+                    <a href="https://instagram.com/oliva.vc" target="_blank"><i class="fa-brands fa-instagram hover:text-stone-800/100 transition-colors duration-300"></i></a>
+                    <a href="https://x.com/csrlv_" target="_blank"><i class="fa-brands fa-twitter hover:text-stone-800/100 transition-colors duration-300"></i></a>
+                    <a href="https://bere.al/csrlv" target="_blank"><i class="fa-solid fa-b hover:text-stone-800/100 transition-colors duration-300"></i></a>
+                    <a href="https://www.linkedin.com/in/olivavc" target="_blank"><i class="fa-brands fa-linkedin hover:text-stone-800/100 transition-colors duration-300"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!--
+        <div class="sticky-note relative bg-[#b8d4e3] aspect-square p-6 flex flex-col justify-between -rotate-1">
+            <div class="pin pin-red"></div>
+            <div class="pt-6 h-full flex flex-col justify-center items-center text-center">
+                <p class="text-sky-950/40 text-xs font-semibold tracking-wider uppercase select-none">Nota 7</p>
+            </div>
+        </div>
+
+        <div class="sticky-note relative bg-[#fbd2b8] aspect-square p-6 flex flex-col justify-between rotate-2">
+            <div class="pin pin-green"></div>
+            <div class="pt-6 h-full flex flex-col justify-center items-center text-center">
+                <p class="text-orange-950/40 text-xs font-semibold tracking-wider uppercase select-none">Nota 8</p>
+            </div>
+        </div> -->
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

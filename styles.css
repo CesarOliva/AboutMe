@@ -1,0 +1,132 @@
+/* body{
+    background-image: url('Images/corcho.png');
+    background-color: #f0f0f0;
+    object-fit: contain;
+    object-position: center;
+} */
+
+/* Textura de fondo simulando corcho */
+.cork-board {
+    background-color: #c29b69;
+    background-image: url('Images/corcho.png');
+    background-size: 500px;
+}
+
+.about-grid {
+    grid-auto-rows: minmax(0, 1fr);
+}
+
+.about-grid .sticky-note {
+    min-height: 0;
+}
+
+.fun-facts-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 19rem;
+}
+
+.fun-facts-list li {
+    position: relative;
+    padding-left: 1rem;
+}
+
+.fun-facts-list li::before {
+    content: '\2022';
+    position: absolute;
+    left: 0;
+}
+
+.music-player {
+    color: #713f12;
+}
+
+.player-button {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid rgba(113, 63, 18, 0.45);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.35);
+    font-size: 0.75rem;
+    line-height: 1;
+}
+
+.player-button:hover,
+.player-button:focus-visible {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.player-time {
+    min-width: 5.5rem;
+    font-size: 0.7rem;
+    font-variant-numeric: tabular-nums;
+}
+
+.player-range {
+    accent-color: #713f12;
+    cursor: pointer;
+}
+
+.volume-range {
+    width: 5rem;
+}
+
+@media (max-width: 639px) {
+    body {
+        overflow-y: auto;
+    }
+
+    .about-grid {
+        height: auto;
+        max-height: none;
+    }
+}
+
+/* Estilo base de los pines o tachuelas */
+.pin {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    box-shadow: 
+        inset -2px -2px 4px rgba(0,0,0,0.4),
+        inset 2px 2px 4px rgba(255,255,255,0.6),
+        3px 5px 6px rgba(0,0,0,0.4);
+}
+
+.pin::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+/* Colores de las tachuelas */
+.pin-white { background-color: #f8fafc; }
+.pin-red { background-color: #ef4444; }
+.pin-blue { background-color: #2563eb; }
+.pin-green { background-color: #22c55e; }
+.pin-yellow { background-color: #eab308; }
+
+/* Sombra de papel realista */
+.sticky-note {
+    box-shadow: 
+        0 1px 1px rgba(0,0,0,0.12), 
+        0 10px 20px -5px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sticky-note:hover {
+    transform: scale(1.02) rotate(0deg) !important;
+    box-shadow: 0 15px 25px -5px rgba(0,0,0,0.4);
+    z-index: 30;
+}
