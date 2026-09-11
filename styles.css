@@ -38,10 +38,6 @@
     left: 0;
 }
 
-.music-player {
-    color: #713f12;
-}
-
 .player-button {
     width: 2rem;
     height: 2rem;
@@ -55,21 +51,6 @@
 .player-button:hover,
 .player-button:focus-visible {
     background: rgba(255, 255, 255, 0.7);
-}
-
-.player-time {
-    min-width: 5.5rem;
-    font-size: 0.7rem;
-    font-variant-numeric: tabular-nums;
-}
-
-.player-range {
-    accent-color: #713f12;
-    cursor: pointer;
-}
-
-.volume-range {
-    width: 5rem;
 }
 
 @media (max-width: 639px) {
